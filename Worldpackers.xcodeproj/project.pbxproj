@@ -15,6 +15,8 @@
 		F29F4C211E1290B800A4E5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C201E1290B800A4E5BF /* Assets.xcassets */; };
 		F29F4C241E1290B800A4E5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C221E1290B800A4E5BF /* LaunchScreen.storyboard */; };
 		F29F4C2F1E1290B800A4E5BF /* WorldpackersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C2E1E1290B800A4E5BF /* WorldpackersTests.swift */; };
+		F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C411E1296EF00A4E5BF /* HitService.swift */; };
+		F29F4C441E12974800A4E5BF /* Hit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C431E12974800A4E5BF /* Hit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		F29F4C2A1E1290B800A4E5BF /* WorldpackersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldpackersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C2E1E1290B800A4E5BF /* WorldpackersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldpackersTests.swift; sourceTree = "<group>"; };
 		F29F4C301E1290B800A4E5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29F4C411E1296EF00A4E5BF /* HitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitService.swift; path = network/HitService.swift; sourceTree = "<group>"; };
+		F29F4C431E12974800A4E5BF /* Hit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hit.swift; path = model/Hit.swift; sourceTree = "<group>"; };
 		FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.release.xcconfig"; sourceTree = "<group>"; };
 		FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldpackersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +113,10 @@
 		F29F4C181E1290B800A4E5BF /* Worldpackers */ = {
 			isa = PBXGroup;
 			children = (
+				F29F4C3C1E12964A00A4E5BF /* viewcontroller */,
+				F29F4C3B1E12964600A4E5BF /* view */,
+				F29F4C3A1E12962400A4E5BF /* model */,
+				F29F4C391E12961C00A4E5BF /* network */,
 				F29F4C191E1290B800A4E5BF /* AppDelegate.swift */,
 				F29F4C1B1E1290B800A4E5BF /* ViewController.swift */,
 				F29F4C1D1E1290B800A4E5BF /* Main.storyboard */,
@@ -126,6 +134,36 @@
 				F29F4C301E1290B800A4E5BF /* Info.plist */,
 			);
 			path = WorldpackersTests;
+			sourceTree = "<group>";
+		};
+		F29F4C391E12961C00A4E5BF /* network */ = {
+			isa = PBXGroup;
+			children = (
+				F29F4C411E1296EF00A4E5BF /* HitService.swift */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		F29F4C3A1E12962400A4E5BF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F29F4C431E12974800A4E5BF /* Hit.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F29F4C3B1E12964600A4E5BF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F29F4C3C1E12964A00A4E5BF /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = viewcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,7 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29F4C1C1E1290B800A4E5BF /* ViewController.swift in Sources */,
+				F29F4C441E12974800A4E5BF /* Hit.swift in Sources */,
 				F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */,
+				F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
