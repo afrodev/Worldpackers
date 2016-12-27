@@ -11,7 +11,6 @@
 		CC5C92DFAB1A7E278E735772 /* Pods_Worldpackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */; };
 		F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C191E1290B800A4E5BF /* AppDelegate.swift */; };
 		F29F4C1F1E1290B800A4E5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C1D1E1290B800A4E5BF /* Main.storyboard */; };
-		F29F4C211E1290B800A4E5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C201E1290B800A4E5BF /* Assets.xcassets */; };
 		F29F4C241E1290B800A4E5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C221E1290B800A4E5BF /* LaunchScreen.storyboard */; };
 		F29F4C2F1E1290B800A4E5BF /* WorldpackersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C2E1E1290B800A4E5BF /* WorldpackersTests.swift */; };
 		F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C411E1296EF00A4E5BF /* HitService.swift */; };
@@ -20,6 +19,8 @@
 		F29F4C481E12AE9A00A4E5BF /* HitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C471E12AE9A00A4E5BF /* HitsTableViewController.swift */; };
 		F29F4C4A1E12AF5600A4E5BF /* HitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */; };
 		F29F4C4C1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */; };
+		F29F4C4E1E12BB1D00A4E5BF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C4D1E12BB1D00A4E5BF /* CustomTextField.swift */; };
+		F29F4C501E12BDC900A4E5BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C4F1E12BDC900A4E5BF /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		F29F4C161E1290B800A4E5BF /* Worldpackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worldpackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C191E1290B800A4E5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29F4C1E1E1290B800A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F29F4C201E1290B800A4E5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29F4C231E1290B800A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F29F4C251E1290B800A4E5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29F4C2A1E1290B800A4E5BF /* WorldpackersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldpackersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,8 @@
 		F29F4C471E12AE9A00A4E5BF /* HitsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitsTableViewController.swift; path = viewcontroller/HitsTableViewController.swift; sourceTree = "<group>"; };
 		F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitTableViewCell.swift; path = view/HitTableViewCell.swift; sourceTree = "<group>"; };
 		F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HitTableViewController+HitServiceProtocol.swift"; path = "viewcontroller/HitTableViewController+HitServiceProtocol.swift"; sourceTree = "<group>"; };
+		F29F4C4D1E12BB1D00A4E5BF /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F29F4C4F1E12BDC900A4E5BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.release.xcconfig"; sourceTree = "<group>"; };
 		FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldpackersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,9 +127,9 @@
 				F29F4C391E12961C00A4E5BF /* network */,
 				F29F4C191E1290B800A4E5BF /* AppDelegate.swift */,
 				F29F4C1D1E1290B800A4E5BF /* Main.storyboard */,
-				F29F4C201E1290B800A4E5BF /* Assets.xcassets */,
 				F29F4C221E1290B800A4E5BF /* LaunchScreen.storyboard */,
 				F29F4C251E1290B800A4E5BF /* Info.plist */,
+				F29F4C4F1E12BDC900A4E5BF /* Images.xcassets */,
 			);
 			path = Worldpackers;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 		F29F4C3B1E12964600A4E5BF /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F29F4C4D1E12BB1D00A4E5BF /* CustomTextField.swift */,
 				F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */,
 			);
 			name = view;
@@ -268,8 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29F4C501E12BDC900A4E5BF /* Images.xcassets in Resources */,
 				F29F4C241E1290B800A4E5BF /* LaunchScreen.storyboard in Resources */,
-				F29F4C211E1290B800A4E5BF /* Assets.xcassets in Resources */,
 				F29F4C1F1E1290B800A4E5BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +388,7 @@
 				F29F4C461E129FA100A4E5BF /* SearchViewController.swift in Sources */,
 				F29F4C441E12974800A4E5BF /* Hit.swift in Sources */,
 				F29F4C4A1E12AF5600A4E5BF /* HitTableViewCell.swift in Sources */,
+				F29F4C4E1E12BB1D00A4E5BF /* CustomTextField.swift in Sources */,
 				F29F4C4C1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift in Sources */,
 				F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */,
 				F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */,
@@ -527,6 +531,7 @@
 			baseConfigurationReference = 50991EFD2E58F730692C88FA /* Pods-Worldpackers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = Worldpackers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -541,6 +546,7 @@
 			baseConfigurationReference = FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = Worldpackers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

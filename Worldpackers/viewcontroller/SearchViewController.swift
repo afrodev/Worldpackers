@@ -22,7 +22,24 @@ class SearchViewController: UIViewController {
         self.performSegue(withIdentifier: "segueTableViewController", sender: searchText)
 
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Dimiss Keyboard touching anywhere
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        self.navigationController?.navigationBar.isHidden = true
 
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.view.gestureRecognizers?.removeAll()
+        self.navigationController?.navigationBar.isHidden = false
+    }
+
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     // MARK: - Navigation
 
