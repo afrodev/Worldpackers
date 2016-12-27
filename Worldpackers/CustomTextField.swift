@@ -24,26 +24,7 @@ class CustomTextField: UITextField {
         imageView.frame = CGRect(x: 0, y: 0, width: 35, height: 35)
         imageView.image = UIImage(named: "search_icon")
         self.leftView = imageView
-        
-        
-//        setBottomBorder(.white)
-        
-//        self.attributedPlaceholder = NSAttributedString(string: self.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.gray])
     }
-    
-//    
-//    func setBottomBorder(_ borderColor: UIColor)
-//    {
-//        self.borderStyle = UITextBorderStyle.none
-//        self.backgroundColor = UIColor.clear
-//        let width = 0.3
-//        
-//        let borderLine = UIView()
-//        borderLine.frame = CGRect(x: 0, y: Double(self.frame.height) - width, width: Double(self.frame.width), height: width)
-//        
-//        borderLine.backgroundColor = borderColor
-//        self.addSubview(borderLine)
-//    }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
