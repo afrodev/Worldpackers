@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30F253D9446FF6DE08763C90 /* Pods_WorldpackersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */; };
+		CC5C92DFAB1A7E278E735772 /* Pods_Worldpackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */; };
 		F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C191E1290B800A4E5BF /* AppDelegate.swift */; };
 		F29F4C1C1E1290B800A4E5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C1B1E1290B800A4E5BF /* ViewController.swift */; };
 		F29F4C1F1E1290B800A4E5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C1D1E1290B800A4E5BF /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24F5B09443E0F36E812E45AC /* Pods-WorldpackersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50991EFD2E58F730692C88FA /* Pods-Worldpackers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.debug.xcconfig"; sourceTree = "<group>"; };
+		98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Worldpackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C161E1290B800A4E5BF /* Worldpackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worldpackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C191E1290B800A4E5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29F4C1B1E1290B800A4E5BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		F29F4C2A1E1290B800A4E5BF /* WorldpackersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldpackersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C2E1E1290B800A4E5BF /* WorldpackersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldpackersTests.swift; sourceTree = "<group>"; };
 		F29F4C301E1290B800A4E5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.release.xcconfig"; sourceTree = "<group>"; };
+		FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldpackersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5C92DFAB1A7E278E735772 /* Pods_Worldpackers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F253D9446FF6DE08763C90 /* Pods_WorldpackersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12B7D150883DC18149967857 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */,
+				FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C6B452A08558FE9CB98C330 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50991EFD2E58F730692C88FA /* Pods-Worldpackers.debug.xcconfig */,
+				FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */,
+				24F5B09443E0F36E812E45AC /* Pods-WorldpackersTests.debug.xcconfig */,
+				FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F29F4C0D1E1290B800A4E5BF = {
 			isa = PBXGroup;
 			children = (
 				F29F4C181E1290B800A4E5BF /* Worldpackers */,
 				F29F4C2D1E1290B800A4E5BF /* WorldpackersTests */,
 				F29F4C171E1290B800A4E5BF /* Products */,
+				3C6B452A08558FE9CB98C330 /* Pods */,
+				12B7D150883DC18149967857 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F29F4C331E1290B800A4E5BF /* Build configuration list for PBXNativeTarget "Worldpackers" */;
 			buildPhases = (
+				2EA68243E2EFA04C910FEE15 /* [CP] Check Pods Manifest.lock */,
 				F29F4C121E1290B800A4E5BF /* Sources */,
 				F29F4C131E1290B800A4E5BF /* Frameworks */,
 				F29F4C141E1290B800A4E5BF /* Resources */,
+				2B8445536EB536BE0F8CA0EB /* [CP] Embed Pods Frameworks */,
+				32BB190820AD8BFC8F34DC67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F29F4C361E1290B800A4E5BF /* Build configuration list for PBXNativeTarget "WorldpackersTests" */;
 			buildPhases = (
+				F0027FD01D402E917B6E5AA8 /* [CP] Check Pods Manifest.lock */,
 				F29F4C261E1290B800A4E5BF /* Sources */,
 				F29F4C271E1290B800A4E5BF /* Frameworks */,
 				F29F4C281E1290B800A4E5BF /* Resources */,
+				6C22BD98ABED51BD8E0102E2 /* [CP] Embed Pods Frameworks */,
+				1683BE3F2B9C63417D9DBFBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +184,14 @@
 				TargetAttributes = {
 					F29F4C151E1290B800A4E5BF = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 7SCH5Y74F7;
+						DevelopmentTeam = LCZDDBK62C;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F29F4C291E1290B800A4E5BF = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 7SCH5Y74F7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F29F4C151E1290B800A4E5BF;
 					};
@@ -195,6 +235,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1683BE3F2B9C63417D9DBFBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B8445536EB536BE0F8CA0EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EA68243E2EFA04C910FEE15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32BB190820AD8BFC8F34DC67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C22BD98ABED51BD8E0102E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0027FD01D402E917B6E5AA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F29F4C121E1290B800A4E5BF /* Sources */ = {
@@ -339,9 +472,10 @@
 		};
 		F29F4C341E1290B800A4E5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50991EFD2E58F730692C88FA /* Pods-Worldpackers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = Worldpackers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.Worldpackers;
@@ -352,9 +486,10 @@
 		};
 		F29F4C351E1290B800A4E5BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = Worldpackers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.Worldpackers;
@@ -365,6 +500,7 @@
 		};
 		F29F4C371E1290B800A4E5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F5B09443E0F36E812E45AC /* Pods-WorldpackersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +516,7 @@
 		};
 		F29F4C381E1290B800A4E5BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +549,7 @@
 				F29F4C351E1290B800A4E5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29F4C361E1290B800A4E5BF /* Build configuration list for PBXNativeTarget "WorldpackersTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +558,7 @@
 				F29F4C381E1290B800A4E5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

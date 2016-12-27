@@ -6,6 +6,12 @@ target 'Worldpackers' do
   use_frameworks!
 
   # Pods for Worldpackers
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'SVProgressHUD'
+  pod 'JDStatusBarNotification'
+  pod 'AlamofireObjectMapper'
+  pod 'RealmSwift'
 
   target 'WorldpackersTests' do
     inherit! :search_paths
