@@ -40,6 +40,11 @@ class SearchViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func actionSearchTextField(_ sender: Any) {
+        print("Search Text Field")
+    }
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
