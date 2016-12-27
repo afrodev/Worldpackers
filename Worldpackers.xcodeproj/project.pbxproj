@@ -17,6 +17,9 @@
 		F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C411E1296EF00A4E5BF /* HitService.swift */; };
 		F29F4C441E12974800A4E5BF /* Hit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C431E12974800A4E5BF /* Hit.swift */; };
 		F29F4C461E129FA100A4E5BF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C451E129FA100A4E5BF /* SearchViewController.swift */; };
+		F29F4C481E12AE9A00A4E5BF /* HitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C471E12AE9A00A4E5BF /* HitsTableViewController.swift */; };
+		F29F4C4A1E12AF5600A4E5BF /* HitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */; };
+		F29F4C4C1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		F29F4C411E1296EF00A4E5BF /* HitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitService.swift; path = network/HitService.swift; sourceTree = "<group>"; };
 		F29F4C431E12974800A4E5BF /* Hit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hit.swift; path = model/Hit.swift; sourceTree = "<group>"; };
 		F29F4C451E129FA100A4E5BF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = viewcontroller/SearchViewController.swift; sourceTree = "<group>"; };
+		F29F4C471E12AE9A00A4E5BF /* HitsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitsTableViewController.swift; path = viewcontroller/HitsTableViewController.swift; sourceTree = "<group>"; };
+		F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitTableViewCell.swift; path = view/HitTableViewCell.swift; sourceTree = "<group>"; };
+		F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HitTableViewController+HitServiceProtocol.swift"; path = "viewcontroller/HitTableViewController+HitServiceProtocol.swift"; sourceTree = "<group>"; };
 		FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.release.xcconfig"; sourceTree = "<group>"; };
 		FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldpackersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 		F29F4C3B1E12964600A4E5BF /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -162,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				F29F4C451E129FA100A4E5BF /* SearchViewController.swift */,
+				F29F4C471E12AE9A00A4E5BF /* HitsTableViewController.swift */,
+				F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -372,8 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29F4C481E12AE9A00A4E5BF /* HitsTableViewController.swift in Sources */,
 				F29F4C461E129FA100A4E5BF /* SearchViewController.swift in Sources */,
 				F29F4C441E12974800A4E5BF /* Hit.swift in Sources */,
+				F29F4C4A1E12AF5600A4E5BF /* HitTableViewCell.swift in Sources */,
+				F29F4C4C1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift in Sources */,
 				F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */,
 				F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */,
 			);

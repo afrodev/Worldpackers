@@ -30,7 +30,7 @@ class HitService {
     
     
     func getHits(searchText: String) {
-        guard let newURL = "https://staging-worldpackersplatform.herokuapp.com/api/search?q=sao paulo".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+        guard let newURL = "https://staging-worldpackersplatform.herokuapp.com/api/search?q=\(searchText)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
             self.delegate?.finishGetHits(hits: [])
             return 
         }
@@ -57,11 +57,9 @@ class HitService {
                 return
             }
             
-            
-            
             self.delegate?.finishGetHits(hits: list)
-            
         }
+        
     }
     
     
