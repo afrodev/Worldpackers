@@ -7,19 +7,13 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SearchViewController: UIViewController {
+    @IBOutlet weak var searchTextField: CustomTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-    
-    @IBAction func actionButton(_ sender: Any) {
-        let searchText = "São Paulo"
-        self.performSegue(withIdentifier: "segueTableViewController", sender: searchText)
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,6 +21,7 @@ class SearchViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+        SVProgressHUD.dismiss()
         self.navigationController?.navigationBar.isHidden = true
 
     }
@@ -41,7 +36,9 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func actionSearchTextField(_ sender: Any) {
-        print("Search Text Field")
+        if let searchText = self.searchTextField.text {
+            self.performSegue(withIdentifier: "segueTableViewController", sender: searchText)
+        }
     }
     
     
