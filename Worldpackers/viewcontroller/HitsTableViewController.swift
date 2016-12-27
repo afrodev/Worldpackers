@@ -21,6 +21,20 @@ class HitsTableViewController: UITableViewController {
         service.getHits(searchText: searchText)
         
         SVProgressHUD.show()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.title = searchText
+        self.navigationController?.navigationBar.tintColor = .white
+
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 54/255.0, green: 154/255.0, blue: 194/255.0, alpha: 1.0)
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

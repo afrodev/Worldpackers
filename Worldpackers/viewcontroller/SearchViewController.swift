@@ -22,8 +22,10 @@ class SearchViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         SVProgressHUD.dismiss()
-        self.navigationController?.navigationBar.isHidden = true
 
+        
+        
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -41,14 +43,7 @@ class SearchViewController: UIViewController {
         }
     }
     
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
         if let vc2 = segue.destination as? HitsTableViewController {
             vc2.searchText = sender as? String
         }
