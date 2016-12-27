@@ -23,35 +23,45 @@ class HitService {
     private let strURL = "https://staging-worldpackersplatform.herokuapp.com/api/search?q="
     var delegate: HitServiceProtocol?
     
-    let header: Parameters = [
+    let headers: HTTPHeaders = [
         "Accept": "application/vnd.worldpackers.com.v6+json",
         "Authorization": "bearer 9e5a86cfca45eba00668e1baf15fd8dd65c15ad760e00845b81995d242844cdd"
     ]
     
     
     func getHits(searchText: String) {
-        let newURL = strURL + searchText
+        guard let newURL = "https://staging-worldpackersplatform.herokuapp.com/api/search?q=sao paulo".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+            self.delegate?.finishGetHits(hits: [])
+            return 
+        }
+
         
-        Alamofire.request(newURL).responseJSON { (response) in
+        
+        Alamofire.request(newURL, headers: headers).responseJSON { response in
             guard let data = response.data else {
                 self.delegate?.finishGetHits(hits: [])
                 return
             }
             
-            guard let jsonString = JSON(data: data).rawString() else {
+            
+            
+            guard let jsonString = JSON(data: data)["hits"].rawString() else {
                 self.delegate?.finishGetHits(hits: [])
                 return
             }
             
+            
+            // Precisa converter para o json correto
             guard let list: [Hit] = Mapper<Hit>().mapArray(JSONString: jsonString) else {
                 self.delegate?.finishGetHits(hits: [])
                 return
             }
             
+            
+            
             self.delegate?.finishGetHits(hits: list)
+            
         }
-        
-        
     }
     
     

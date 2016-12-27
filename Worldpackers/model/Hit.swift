@@ -14,20 +14,20 @@ import RealmSwift
 
 
 class Hit: Object, Mappable {
-    dynamic var id: String!
+    dynamic var id: Int = 0
     dynamic var title: String!
     dynamic var city: String!
     dynamic var country: String!
-    dynamic var rating: String!
-    dynamic var reviews_count: String!
+    dynamic var rating: Int = 0
+    dynamic var reviews_count: Int = 0
     dynamic var photo_url: String!
     dynamic var url: String!
     dynamic var accommodation_type_slug: String!
-    dynamic var meals_count: String!
-    dynamic var wish_list_count: String!
-    dynamic var trips_count: String!
+    dynamic var meals_count: Int = 0
+    dynamic var wish_list_count: Int = 0
+    dynamic var trips_count: Int = 0
     dynamic var teaser_badge: String!
-    dynamic var hosting_since: String!
+    dynamic var hosting_since: Date!
     
     // MARK:  Método que obrigatório do Realm
     required convenience init?(map: Map) {
@@ -52,8 +52,7 @@ class Hit: Object, Mappable {
         self.wish_list_count <- map["wish_list_count"]
         self.trips_count <- map["trips_count"]
         self.teaser_badge <- map["teaser_badge"]
-        self.teaser_badge <- map["teaser_badge"]
-        self.hosting_since <- map["hosting_since"]
+        self.hosting_since <- (map["hosting_since"], DateTransform())
         
         self.save()
     }

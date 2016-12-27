@@ -10,13 +10,13 @@
 		30F253D9446FF6DE08763C90 /* Pods_WorldpackersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */; };
 		CC5C92DFAB1A7E278E735772 /* Pods_Worldpackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */; };
 		F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C191E1290B800A4E5BF /* AppDelegate.swift */; };
-		F29F4C1C1E1290B800A4E5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C1B1E1290B800A4E5BF /* ViewController.swift */; };
 		F29F4C1F1E1290B800A4E5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C1D1E1290B800A4E5BF /* Main.storyboard */; };
 		F29F4C211E1290B800A4E5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C201E1290B800A4E5BF /* Assets.xcassets */; };
 		F29F4C241E1290B800A4E5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C221E1290B800A4E5BF /* LaunchScreen.storyboard */; };
 		F29F4C2F1E1290B800A4E5BF /* WorldpackersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C2E1E1290B800A4E5BF /* WorldpackersTests.swift */; };
 		F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C411E1296EF00A4E5BF /* HitService.swift */; };
 		F29F4C441E12974800A4E5BF /* Hit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C431E12974800A4E5BF /* Hit.swift */; };
+		F29F4C461E129FA100A4E5BF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C451E129FA100A4E5BF /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 		98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Worldpackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C161E1290B800A4E5BF /* Worldpackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worldpackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C191E1290B800A4E5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F29F4C1B1E1290B800A4E5BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F29F4C1E1E1290B800A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F29F4C201E1290B800A4E5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29F4C231E1290B800A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		F29F4C301E1290B800A4E5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29F4C411E1296EF00A4E5BF /* HitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitService.swift; path = network/HitService.swift; sourceTree = "<group>"; };
 		F29F4C431E12974800A4E5BF /* Hit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hit.swift; path = model/Hit.swift; sourceTree = "<group>"; };
+		F29F4C451E129FA100A4E5BF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = viewcontroller/SearchViewController.swift; sourceTree = "<group>"; };
 		FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.release.xcconfig"; sourceTree = "<group>"; };
 		FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldpackersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +118,6 @@
 				F29F4C3A1E12962400A4E5BF /* model */,
 				F29F4C391E12961C00A4E5BF /* network */,
 				F29F4C191E1290B800A4E5BF /* AppDelegate.swift */,
-				F29F4C1B1E1290B800A4E5BF /* ViewController.swift */,
 				F29F4C1D1E1290B800A4E5BF /* Main.storyboard */,
 				F29F4C201E1290B800A4E5BF /* Assets.xcassets */,
 				F29F4C221E1290B800A4E5BF /* LaunchScreen.storyboard */,
@@ -162,6 +161,7 @@
 		F29F4C3C1E12964A00A4E5BF /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				F29F4C451E129FA100A4E5BF /* SearchViewController.swift */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F29F4C1C1E1290B800A4E5BF /* ViewController.swift in Sources */,
+				F29F4C461E129FA100A4E5BF /* SearchViewController.swift in Sources */,
 				F29F4C441E12974800A4E5BF /* Hit.swift in Sources */,
 				F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */,
 				F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */,
