@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "long-jorney.PNG",
+      "filename" : "long-jorney.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "long-jorney@2x.PNG",
+      "filename" : "long-jorney@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "long-jorney@3x.PNG",
+      "filename" : "long-jorney@3x.png",
       "scale" : "3x"
     }
   ],

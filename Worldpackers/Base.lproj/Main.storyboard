@@ -14,7 +14,7 @@
             <objects>
                 <tabBarController id="57N-tq-HSE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="oo6-Gr-emc">
-                        <barButtonItem key="backBarButtonItem" title=" " width="1" style="plain" id="abf-Y5-muk">
+                        <barButtonItem key="backBarButtonItem" title=" " width="1" id="abf-Y5-muk">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
