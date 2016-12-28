@@ -13,10 +13,7 @@ class CustomTextField: UITextField {
     var leftImage: UIImage?
     let padding = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 20);
 
-    
-    
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    // MARK: CustomTextField to add image on left side
     override func draw(_ rect: CGRect) {
         self.leftViewMode = .always
         

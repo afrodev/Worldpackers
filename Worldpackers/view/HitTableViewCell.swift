@@ -21,15 +21,13 @@ class HitTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    // MARK: Configure tableviewcell
     func configure(hit: Hit) {
         self.imageViewPhoto.image = UIImage(data: hit.dataPhoto)
         self.labelTitle.text = hit.title
@@ -42,14 +40,16 @@ class HitTableViewCell: UITableViewCell {
         self.labelWishList.text = String(hit.wishListCount)
         self.labelTrips.text = String(hit.tripsCount)
         self.labelPrice.text = "US$ " + String(hit.price)
-        
     }
     
+    // MARK: algorithm to show stars on cell
     private func configStars(rating: Int) {
+        // 0 to hide all stars
         if rating == 0 {
             for i in imageViewArrayStar {
                 i.isHidden = true
             }
+        // 1 or more to show stars
         } else if rating >= 1 {
             for i in imageViewArrayStar {
                 i.image = UIImage(named: "star_off")

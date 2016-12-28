@@ -37,6 +37,7 @@ class CategoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
+        // MARK: Optimization TableViewCell
         (cell as! CategoryTableViewCell).imageViewPhoto.image = arrayImages[indexPath.row]
         
     }

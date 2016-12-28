@@ -7,10 +7,9 @@
 //
 
 import Foundation
-import Alamofire
-import SwiftyJSON
 import ObjectMapper
 
+// MARK: Is Mappable to convert JSON to Hit object
 class Hit: Mappable {
     dynamic var id: Int = 0
     dynamic var title: String!
@@ -32,7 +31,8 @@ class Hit: Mappable {
     required convenience init?(map: Map) {
         self.init()
     }
-    
+
+    // MARK: Mapping json to object
     func mapping(map: Map) {
         self.id <- map["id"]
         self.title <- map["title"]
