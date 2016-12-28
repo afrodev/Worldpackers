@@ -12,11 +12,9 @@ import SVProgressHUD
 class SearchViewController: UIViewController {
     @IBOutlet weak var searchTextField: CustomTextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         // Dimiss Keyboard Event

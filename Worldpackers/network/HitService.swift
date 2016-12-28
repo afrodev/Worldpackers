@@ -42,7 +42,7 @@ class HitService {
                 self.delegate?.finishGetHits(hits: [])
                 return
             }
-            // Precisa converter para o json correto
+            
             guard let list: [Hit] = Mapper<Hit>().mapArray(JSONString: jsonString) else {
                 self.delegate?.finishGetHits(hits: [])
                 return

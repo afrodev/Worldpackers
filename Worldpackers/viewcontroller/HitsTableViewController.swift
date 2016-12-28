@@ -22,7 +22,6 @@ class HitsTableViewController: UITableViewController {
         
         self.view.alpha = 0.5
         SVProgressHUD.show()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,27 +44,16 @@ class HitsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellHit", for: indexPath)
-        
         return cell
     }
     
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        // Optimization TableViewCell
         
+        // Optimization TableViewCell
         let hit = self.arrayHits[indexPath.row]
         (cell as! HitTableViewCell).configure(hit: hit)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
