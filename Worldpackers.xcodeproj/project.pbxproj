@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		30F253D9446FF6DE08763C90 /* Pods_WorldpackersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */; };
 		CC5C92DFAB1A7E278E735772 /* Pods_Worldpackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */; };
+		F20DDE451E13E11800912D9F /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DDE441E13E11800912D9F /* CategoryTableViewController.swift */; };
+		F20DDE471E13E16600912D9F /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DDE461E13E16600912D9F /* CategoryTableViewCell.swift */; };
 		F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C191E1290B800A4E5BF /* AppDelegate.swift */; };
 		F29F4C1F1E1290B800A4E5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C1D1E1290B800A4E5BF /* Main.storyboard */; };
 		F29F4C241E1290B800A4E5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C221E1290B800A4E5BF /* LaunchScreen.storyboard */; };
@@ -37,6 +39,8 @@
 		24F5B09443E0F36E812E45AC /* Pods-WorldpackersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		50991EFD2E58F730692C88FA /* Pods-Worldpackers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.debug.xcconfig"; sourceTree = "<group>"; };
 		98EC98E42CE7887337F746DD /* Pods_Worldpackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Worldpackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20DDE441E13E11800912D9F /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = viewcontroller/CategoryTableViewController.swift; sourceTree = "<group>"; };
+		F20DDE461E13E16600912D9F /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = view/CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		F29F4C161E1290B800A4E5BF /* Worldpackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worldpackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4C191E1290B800A4E5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29F4C1E1E1290B800A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 			children = (
 				F29F4C4D1E12BB1D00A4E5BF /* CustomTextField.swift */,
 				F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */,
+				F20DDE461E13E16600912D9F /* CategoryTableViewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				F29F4C451E129FA100A4E5BF /* SearchViewController.swift */,
 				F29F4C471E12AE9A00A4E5BF /* HitsTableViewController.swift */,
 				F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */,
+				F20DDE441E13E11800912D9F /* CategoryTableViewController.swift */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -389,6 +395,8 @@
 				F29F4C441E12974800A4E5BF /* Hit.swift in Sources */,
 				F29F4C4A1E12AF5600A4E5BF /* HitTableViewCell.swift in Sources */,
 				F29F4C4E1E12BB1D00A4E5BF /* CustomTextField.swift in Sources */,
+				F20DDE471E13E16600912D9F /* CategoryTableViewCell.swift in Sources */,
+				F20DDE451E13E11800912D9F /* CategoryTableViewController.swift in Sources */,
 				F29F4C4C1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift in Sources */,
 				F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */,
 				F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */,

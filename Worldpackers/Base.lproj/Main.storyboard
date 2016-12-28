@@ -103,157 +103,49 @@
             </objects>
             <point key="canvasLocation" x="31.875" y="-72.887323943661968"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Category Table View Controller-->
         <scene sceneID="bZw-sB-DHm">
             <objects>
-                <tableViewController id="0TB-fb-psU" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="164" sectionHeaderHeight="28" sectionFooterHeight="28" id="wIQ-cA-X5V">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1300"/>
+                <tableViewController id="0TB-fb-psU" customClass="CategoryTableViewController" customModule="Worldpackers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="159" sectionHeaderHeight="28" sectionFooterHeight="28" id="wIQ-cA-X5V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="Tmn-yG-FIn">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="xxx-SH-URW">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xxx-SH-URW" id="JyA-3F-RP8">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hostel-life" translatesAutoresizingMaskIntoConstraints="NO" id="TlS-cJ-8mH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="C25-Um-Csw">
-                                        <rect key="frame" x="0.0" y="160" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C25-Um-Csw" id="mJ4-2f-YYP">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social-impact" translatesAutoresizingMaskIntoConstraints="NO" id="V64-Nx-Jye">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="Fn9-xa-sw3">
-                                        <rect key="frame" x="0.0" y="320" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fn9-xa-sw3" id="Rf1-kM-Ihh">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature-lovers" translatesAutoresizingMaskIntoConstraints="NO" id="HPI-yh-gnG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="qAf-j5-zrF">
-                                        <rect key="frame" x="0.0" y="480" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qAf-j5-zrF" id="3nG-5v-Omv">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social-media" translatesAutoresizingMaskIntoConstraints="NO" id="jsz-Lg-kqf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="lEr-jf-1HV">
-                                        <rect key="frame" x="0.0" y="640" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lEr-jf-1HV" id="qjE-Nx-zPf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photography" translatesAutoresizingMaskIntoConstraints="NO" id="AxZ-SN-zOB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="GJV-h0-ZiF">
-                                        <rect key="frame" x="0.0" y="800" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GJV-h0-ZiF" id="1p0-Xb-HI4">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chef-to-the-world" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-Y7-wIX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="ub4-d2-WXJ">
-                                        <rect key="frame" x="0.0" y="960" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ub4-d2-WXJ" id="ZPk-9j-Tjx">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hands-on" translatesAutoresizingMaskIntoConstraints="NO" id="aBa-gL-eQA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="aYk-Oa-d8U">
-                                        <rect key="frame" x="0.0" y="1120" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aYk-Oa-d8U" id="rJC-CB-rQh">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="short-trip" translatesAutoresizingMaskIntoConstraints="NO" id="rFH-RN-gXn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="1f0-9Y-8AM">
-                                        <rect key="frame" x="0.0" y="1280" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1f0-9Y-8AM" id="zPx-Qt-40K">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="long-jorney" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-5a-APC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCategory" rowHeight="163" id="xxx-SH-URW" customClass="CategoryTableViewCell" customModule="Worldpackers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="163"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xxx-SH-URW" id="JyA-3F-RP8">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hostel-life" translatesAutoresizingMaskIntoConstraints="NO" id="TlS-cJ-8mH">
+                                            <rect key="frame" x="0.0" y="-1" width="320" height="156"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TlS-cJ-8mH" firstAttribute="leading" secondItem="JyA-3F-RP8" secondAttribute="leading" id="4Hz-7s-ZHg"/>
+                                        <constraint firstItem="TlS-cJ-8mH" firstAttribute="top" secondItem="JyA-3F-RP8" secondAttribute="top" constant="-1" id="SOl-XN-aoj"/>
+                                        <constraint firstAttribute="trailing" secondItem="TlS-cJ-8mH" secondAttribute="trailing" id="TBd-9n-TBc"/>
+                                        <constraint firstAttribute="bottom" secondItem="TlS-cJ-8mH" secondAttribute="bottom" constant="8" id="htw-qh-lK5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageViewPhoto" destination="TlS-cJ-8mH" id="MuQ-l0-Vev"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="0TB-fb-psU" id="WK4-uw-wz6"/>
                             <outlet property="delegate" destination="0TB-fb-psU" id="UKg-Ga-daH"/>
                         </connections>
                     </tableView>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1300"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qib-ag-bn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="1123"/>
+            <point key="canvasLocation" x="30" y="1121.8309859154929"/>
         </scene>
         <!--Hits Table View Controller-->
         <scene sceneID="bwy-Zk-sol">
@@ -461,17 +353,9 @@
     </scenes>
     <resources>
         <image name="airplane_icon" width="22" height="22"/>
-        <image name="chef-to-the-world" width="213" height="106"/>
-        <image name="hands-on" width="213" height="105"/>
         <image name="heart_icon" width="22" height="22"/>
         <image name="hostel-life" width="213" height="106"/>
         <image name="kitchen_icon" width="22" height="22"/>
-        <image name="long-jorney" width="213" height="106"/>
-        <image name="nature-lovers" width="213" height="107"/>
-        <image name="photography" width="213" height="106"/>
-        <image name="short-trip" width="213" height="105"/>
-        <image name="social-impact" width="213" height="107"/>
-        <image name="social-media" width="213" height="106"/>
         <image name="star_off" width="22" height="22"/>
     </resources>
 </document>
