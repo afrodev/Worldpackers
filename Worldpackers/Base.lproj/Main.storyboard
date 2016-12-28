@@ -248,7 +248,7 @@
         <scene sceneID="bwy-Zk-sol">
             <objects>
                 <tableViewController id="daW-pp-7DI" customClass="HitsTableViewController" customModule="Worldpackers" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="288" sectionHeaderHeight="28" sectionFooterHeight="28" id="VPH-Sw-iEy">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="406" sectionHeaderHeight="28" sectionFooterHeight="28" id="VPH-Sw-iEy">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -278,28 +278,28 @@
                                             <color key="textColor" red="0.35932588577270508" green="0.40317142009735107" blue="0.45314431190490723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_on" translatesAutoresizingMaskIntoConstraints="NO" id="D19-dF-09r">
-                                            <rect key="frame" x="132" y="321" width="22" height="22"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_off" translatesAutoresizingMaskIntoConstraints="NO" id="D19-dF-09r">
+                                            <rect key="frame" x="189" y="321" width="22" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hmB-fc-sXB">
                                             <rect key="frame" x="102" y="374" width="15" height="15"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_on" translatesAutoresizingMaskIntoConstraints="NO" id="Hcz-zf-Amz">
-                                            <rect key="frame" x="156" y="321" width="22" height="22"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_off" translatesAutoresizingMaskIntoConstraints="NO" id="Hcz-zf-Amz">
+                                            <rect key="frame" x="213" y="321" width="22" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_on" translatesAutoresizingMaskIntoConstraints="NO" id="GyC-j7-gkO">
-                                            <rect key="frame" x="180" y="321" width="22" height="22"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_off" translatesAutoresizingMaskIntoConstraints="NO" id="GyC-j7-gkO">
+                                            <rect key="frame" x="237" y="321" width="22" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_on" translatesAutoresizingMaskIntoConstraints="NO" id="dtt-fT-8pY">
-                                            <rect key="frame" x="203" y="321" width="22" height="22"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_off" translatesAutoresizingMaskIntoConstraints="NO" id="dtt-fT-8pY">
+                                            <rect key="frame" x="260" y="321" width="22" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_off" translatesAutoresizingMaskIntoConstraints="NO" id="cUB-nt-jQy">
-                                            <rect key="frame" x="225" y="321" width="22" height="22"/>
+                                            <rect key="frame" x="282" y="321" width="22" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shared dorm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-Ze-G0e">
@@ -348,6 +348,21 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageViewPhoto" destination="tMG-iH-I2c" id="Ca0-Ct-UkS"/>
+                                    <outlet property="labelAccommodation" destination="4hG-Ze-G0e" id="5ni-es-dTy"/>
+                                    <outlet property="labelCityCountry" destination="Paq-9K-KiI" id="aN7-if-vAi"/>
+                                    <outlet property="labelMeals" destination="lq5-2m-8kY" id="PRv-M1-iKf"/>
+                                    <outlet property="labelPrice" destination="Jx7-F0-UqN" id="yM3-Qz-ZBu"/>
+                                    <outlet property="labelTitle" destination="11e-Yq-Cl0" id="KCA-QD-qKk"/>
+                                    <outlet property="labelTrips" destination="Zjk-Qn-axG" id="CM1-x2-1at"/>
+                                    <outlet property="labelWishList" destination="TOx-nD-mvS" id="pFJ-Zd-cVr"/>
+                                    <outletCollection property="imageViewArrayStar" destination="D19-dF-09r" collectionClass="NSMutableArray" id="8hM-H6-ejA"/>
+                                    <outletCollection property="imageViewArrayStar" destination="Hcz-zf-Amz" collectionClass="NSMutableArray" id="Cmf-gB-SFy"/>
+                                    <outletCollection property="imageViewArrayStar" destination="GyC-j7-gkO" collectionClass="NSMutableArray" id="6e7-hy-vjP"/>
+                                    <outletCollection property="imageViewArrayStar" destination="dtt-fT-8pY" collectionClass="NSMutableArray" id="UNq-H0-uTj"/>
+                                    <outletCollection property="imageViewArrayStar" destination="cUB-nt-jQy" collectionClass="NSMutableArray" id="Lg6-Wr-lud"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -376,6 +391,5 @@
         <image name="social-impact" width="213" height="107"/>
         <image name="social-media" width="213" height="106"/>
         <image name="star_off" width="22" height="22"/>
-        <image name="star_on" width="22" height="22"/>
     </resources>
 </document>

@@ -56,6 +56,13 @@ class HitsTableViewController: UITableViewController {
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let hit = self.arrayHits[indexPath.row]
+        (cell as! HitTableViewCell).configure(hit: hit)
+        
+    }
 
     /*
     // MARK: - Navigation

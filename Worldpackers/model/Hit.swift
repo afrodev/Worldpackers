@@ -10,32 +10,27 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 import ObjectMapper
-import RealmSwift
 
-
-class Hit: Object, Mappable {
+class Hit: Mappable {
     dynamic var id: Int = 0
     dynamic var title: String!
     dynamic var city: String!
     dynamic var country: String!
     dynamic var rating: Int = 0
-    dynamic var reviews_count: Int = 0
-    dynamic var photo_url: String!
+    dynamic var reviewsCount: Int = 0
+    dynamic var photoUrl: String!
+    dynamic var price: Int = 0
     dynamic var url: String!
-    dynamic var accommodation_type_slug: String!
-    dynamic var meals_count: Int = 0
-    dynamic var wish_list_count: Int = 0
-    dynamic var trips_count: Int = 0
-    dynamic var teaser_badge: String!
-    dynamic var hosting_since: Date!
+    dynamic var accommodationTypeSlug: String!
+    dynamic var mealsCount: Int = 0
+    dynamic var wishListCount: Int = 0
+    dynamic var tripsCount: Int = 0
+    dynamic var teaserBadge: String!
+    dynamic var hostingSince: Date!
+    dynamic var dataPhoto: Data!
     
-    // MARK:  Método que obrigatório do Realm
     required convenience init?(map: Map) {
         self.init()
-    }
-    
-    override static func primaryKey() -> String? {
-        return "id"
     }
     
     func mapping(map: Map) {
@@ -44,41 +39,31 @@ class Hit: Object, Mappable {
         self.city <- map["city"]
         self.country <- map["country"]
         self.rating <- map["rating"]
-        self.reviews_count <- map["reviews_count"]
-        self.photo_url <- map["photo_url"]
+        self.reviewsCount <- map["reviews_count"]
+        self.photoUrl <- map["photo_url"]
+        self.price <- map["price"]
         self.url <- map["url"]
-        self.accommodation_type_slug <- map["accommodation_type_slug"]
-        self.meals_count <- map["meals_count"]
-        self.wish_list_count <- map["wish_list_count"]
-        self.trips_count <- map["trips_count"]
-        self.teaser_badge <- map["teaser_badge"]
-        self.hosting_since <- (map["hosting_since"], DateTransform())
+        self.accommodationTypeSlug <- map["accommodation_type_slug"]
+        self.mealsCount <- map["meals_count"]
+        self.wishListCount <- map["wish_list_count"]
+        self.tripsCount <- map["trips_count"]
+        self.teaserBadge <- map["teaser_badge"]
+        self.hostingSince <- (map["hosting_since"], DateTransform())
         
-        self.save()
-    }
-    
-    // MARK: Salva o objeto mapeado no Realm
-    func save() {
-        let realm = try! Realm()
-        /*
-         do {
-         // MARK: Transforma Data em UIImage
-         if let url = URL(string: self.urlImage) {
-         print(url)
-         let imageData = try Data(contentsOf: url)
-         self.imageData = imageData
-         }
-         } catch {
-         self.imageData = nil
-         print("erro imagem model")
-         }
-         */
-        try! realm.write {
-            realm.add(self, update: true)
+        do {
+            // MARK: Transforma Data em UIImage
+            if let url = URL(string: self.photoUrl) {
+                print(url)
+                let imageData = try Data(contentsOf: url)
+                self.dataPhoto = imageData
+            }
+        } catch {
+            if let image = UIImage(named: "invalid_image") {
+                self.dataPhoto = UIImagePNGRepresentation(image)
+            }
         }
+        
+        
     }
-    
-    
-    
     
 }

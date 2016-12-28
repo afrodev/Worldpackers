@@ -11,7 +11,6 @@ target 'Worldpackers' do
   pod 'SVProgressHUD'
   pod 'JDStatusBarNotification'
   pod 'AlamofireObjectMapper'
-  pod 'RealmSwift'
 
   target 'WorldpackersTests' do
     inherit! :search_paths
