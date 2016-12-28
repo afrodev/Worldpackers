@@ -10,8 +10,6 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 import ObjectMapper
-import RealmSwift
-
 
 // Protocolo para retornar as informações de uma banda
 protocol HitServiceProtocol: class {
