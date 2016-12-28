@@ -12,7 +12,9 @@ import SVProgressHUD
 extension HitsTableViewController: HitServiceProtocol {
     func finishGetHits(hits: [Hit]) {
         self.arrayHits = hits
+        self.view.alpha = 1
         SVProgressHUD.dismiss()
+        
         
         self.tableView.reloadData()
     }

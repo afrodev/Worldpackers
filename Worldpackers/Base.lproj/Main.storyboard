@@ -120,7 +120,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hostel-life" translatesAutoresizingMaskIntoConstraints="NO" id="TlS-cJ-8mH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hostel-life" translatesAutoresizingMaskIntoConstraints="NO" id="TlS-cJ-8mH">
                                             <rect key="frame" x="0.0" y="-1" width="320" height="156"/>
                                         </imageView>
                                     </subviews>

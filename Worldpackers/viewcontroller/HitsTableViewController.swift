@@ -20,6 +20,8 @@ class HitsTableViewController: UITableViewController {
         service.delegate = self
         service.getHits(searchText: searchText)
         
+        
+        self.view.alpha = 0.5
         SVProgressHUD.show()
         
     }
