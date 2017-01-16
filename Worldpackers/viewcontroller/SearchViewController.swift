@@ -41,8 +41,9 @@ class SearchViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc2 = segue.destination as? HitsTableViewController {
-            vc2.searchText = sender as? String
+        let text = self.searchTextField.text
+        if let vc = segue.destination as? HitsTableViewController {
+            vc.inject(text!)
         }
 
     }

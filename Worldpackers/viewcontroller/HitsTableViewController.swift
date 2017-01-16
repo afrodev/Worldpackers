@@ -9,10 +9,12 @@
 import UIKit
 import SVProgressHUD
 
-class HitsTableViewController: UITableViewController {
+class HitsTableViewController: UITableViewController, Injectable {
     let service = HitService()
-    var searchText: String!
+    private var searchText: String!
     var arrayHits: [HitViewModel] = []
+    
+    typealias T = String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,14 @@ class HitsTableViewController: UITableViewController {
         
     }
 
+    func inject(_ text: String) {
+        self.searchText = text
+    }
+    
+    func assertDependencies() {
+        assert(searchText != nil)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
