@@ -13,7 +13,7 @@ import ObjectMapper
 
 // MARK: Protocol to return Hits when the request is over
 protocol HitServiceProtocol: class {
-    func finishGetHits(hits: [Hit])
+    func finishGetHits(hits: [HitViewModel])
 }
 
 class HitService {
@@ -48,7 +48,13 @@ class HitService {
                 return
             }
             
-            self.delegate?.finishGetHits(hits: list)
+            var arrayViewModel: [HitViewModel] = []
+            
+            for h in list {
+                arrayViewModel.append(HitViewModel(hit: h))
+            }
+            
+            self.delegate?.finishGetHits(hits: arrayViewModel)
         }
         
     }

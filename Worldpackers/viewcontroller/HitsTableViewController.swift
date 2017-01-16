@@ -12,7 +12,7 @@ import SVProgressHUD
 class HitsTableViewController: UITableViewController {
     let service = HitService()
     var searchText: String!
-    var arrayHits: [Hit] = []
+    var arrayHits: [HitViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +51,8 @@ class HitsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         // Optimization TableViewCell
-        let hit = self.arrayHits[indexPath.row]
-        (cell as! HitTableViewCell).configure(hit: hit)
+        let hitViewModel = self.arrayHits[indexPath.row]
+        (cell as! HitTableViewCell).configure(hit: hitViewModel)
         
     }
 

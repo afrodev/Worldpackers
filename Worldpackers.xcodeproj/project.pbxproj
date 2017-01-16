@@ -23,6 +23,7 @@
 		F29F4C4A1E12AF5600A4E5BF /* HitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */; };
 		F29F4C4C1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */; };
 		F29F4C501E12BDC900A4E5BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29F4C4F1E12BDC900A4E5BF /* Images.xcassets */; };
+		F2F021041E2C50B700B21E72 /* HitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F021031E2C50B700B21E72 /* HitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F29F4C491E12AF5600A4E5BF /* HitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitTableViewCell.swift; path = view/HitTableViewCell.swift; sourceTree = "<group>"; };
 		F29F4C4B1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HitTableViewController+HitServiceProtocol.swift"; path = "viewcontroller/HitTableViewController+HitServiceProtocol.swift"; sourceTree = "<group>"; };
 		F29F4C4F1E12BDC900A4E5BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2F021031E2C50B700B21E72 /* HitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitViewModel.swift; path = viewmodel/HitViewModel.swift; sourceTree = "<group>"; };
 		FA193A48D2CE37A36EDD81EF /* Pods-Worldpackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Worldpackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Worldpackers/Pods-Worldpackers.release.xcconfig"; sourceTree = "<group>"; };
 		FF5361B1341DD35A18086B5C /* Pods_WorldpackersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldpackersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD62D115F8E0538071D7849 /* Pods-WorldpackersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldpackersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldpackersTests/Pods-WorldpackersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				F29F4C3C1E12964A00A4E5BF /* viewcontroller */,
 				F29F4C3B1E12964600A4E5BF /* view */,
+				F2F021021E2C509600B21E72 /* viewmodel */,
 				F29F4C3A1E12962400A4E5BF /* model */,
 				F29F4C391E12961C00A4E5BF /* network */,
 				F29F4C191E1290B800A4E5BF /* AppDelegate.swift */,
@@ -182,6 +185,14 @@
 				F20DDE441E13E11800912D9F /* CategoryTableViewController.swift */,
 			);
 			name = viewcontroller;
+			sourceTree = "<group>";
+		};
+		F2F021021E2C509600B21E72 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F2F021031E2C50B700B21E72 /* HitViewModel.swift */,
+			);
+			name = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +408,7 @@
 				F29F4C4A1E12AF5600A4E5BF /* HitTableViewCell.swift in Sources */,
 				F20DDE471E13E16600912D9F /* CategoryTableViewCell.swift in Sources */,
 				F20DDE451E13E11800912D9F /* CategoryTableViewController.swift in Sources */,
+				F2F021041E2C50B700B21E72 /* HitViewModel.swift in Sources */,
 				F29F4C4C1E12AFBD00A4E5BF /* HitTableViewController+HitServiceProtocol.swift in Sources */,
 				F29F4C1A1E1290B800A4E5BF /* AppDelegate.swift in Sources */,
 				F29F4C421E1296EF00A4E5BF /* HitService.swift in Sources */,

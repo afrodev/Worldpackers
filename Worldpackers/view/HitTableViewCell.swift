@@ -28,18 +28,21 @@ class HitTableViewCell: UITableViewCell {
     }
     
     // MARK: Configure tableviewcell
-    func configure(hit: Hit) {
-        self.imageViewPhoto.image = UIImage(data: hit.dataPhoto)
+    func configure(hit: HitViewModel) {
+        
+        self.imageViewPhoto.image = hit.photoImage
         self.labelTitle.text = hit.title
         self.labelCityCountry.text = hit.city + ", " + hit.country
         
-        self.configStars(rating: hit.rating)
+        if let rating = Int(hit.rating) {
+            self.configStars(rating: rating)
+        }
         
         self.labelAccommodation.text = hit.accommodationTypeSlug
-        self.labelMeals.text = String(hit.mealsCount)
-        self.labelWishList.text = String(hit.wishListCount)
-        self.labelTrips.text = String(hit.tripsCount)
-        self.labelPrice.text = "US$ " + String(hit.price)
+        self.labelMeals.text = hit.mealsCount
+        self.labelWishList.text = hit.wishListCount
+        self.labelTrips.text = hit.tripsCount
+        self.labelPrice.text = hit.price
     }
     
     // MARK: algorithm to show stars on cell
